@@ -1,0 +1,121 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+button{
+    display: block;
+    width: 60%;
+    max-width: 1100px;
+    padding: 30px 0;
+    margin: 5% auto;
+}
+/* class */
+.main{
+    margin: 45% auto;
+}
+.open{
+    color: #fff;
+    width: 80%;
+    max-width: 1400px;
+    padding: 30px 0;
+    border: 3px solid #000;
+    margin: 5% auto;
+}
+.open:nth-of-type(1){
+    background-color: #ff0000;
+}
+.open:nth-of-type(3){
+    background-color: #0000ff;
+}
+.open:nth-of-type(5){
+    color: #000;
+    background-color: #00ff00;
+}
+.open.none{
+    display: none;
+}
+.anther_button{
+    display: none;
+    width: 64px;
+    height: 64px;
+}
+.anther_button.stop{
+    display: block;
+}
+.cheering_songs  button{
+    border: 2px solid #ff0000;
+}
+.BGM  button{
+    border: 2px solid #0000ff;
+}
+.cheering.none{
+    display: none;
+}
+/* id */
+#pause{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+}
+#stop{
+    background-color: lavender;
+    margin: 50px auto;
+}
+
+#bgm1,
+#bgm2,
+#bgm3,
+#bgm4,
+#bgm5{
+    background-color: whitesmoke;
+}
+
+
+#other1,
+#other2,
+#other3,
+#other4,
+#other5{
+    background-color: #000;
+    color: whitesmoke;
+}
+/*  */
+#pause,
+.cheering.prepare{
+    box-sizing: border-box;
+}
+/* youtube的な表現に使う */
+.cheering.prepare{
+    /* 表示方式 */
+    display: block;
+    /* 大きさ */
+    width: 250px;
+    height: 250px;
+    /* ポジション */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* フォント */
+    font-weight: 700;
+    /* 余白 */
+    margin: 0;
+    /*  */
+    border: 3px solid #000;
+    border-radius: 50%;
+}
+.anther_button.No{
+    display: block;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Music List</title>
+    <link rel="stylesheet" href="https://o289.github.io/NewMusicList/style.css">
+</head>
+<body>
+    <img src="https://o289.github.io/NewMusicList/img/pause.png" id="pause" class="anther_button">
+    <img src="https://o289.github.io/NewMusicList/img/911_x_h.svg" id="stop" class="anther_button">
+    <div class="main">
+        <div id="open1" class="open">応援歌</div>
+        <div class="cheering_songs">
+            <button id="nishioka" class="cheering">西岡剛（ロッテ）</button>
+            <button id="nakamura"class="cheering">中村紀洋（近鉄）</button>
+            <button id="yamakawa" class="cheering">山川穂高（西武）</button>
+            <button id="ogata" class="cheering">緒方孝市（広島）</button>
+            <button id="maeda" class="cheering">前田智徳（広島）</button>
+            <button id="imaoka" class="cheering">今岡誠（阪神）</button>
+            <button id="rose" class="cheering">ローズ（横浜）</button>
+            <button id="haru" class="cheering">波瑠敏夫（横浜）</button>
+            <button id="sniping" class="cheering">狙い撃ち（中日）</button>
+            <button id="arai" class="cheering">新井貴浩</button>
+            <button id="ChanceArrives" class="cheering">チャンス襲来（阪神）</button>
+            <button id="fukudome" class="cheering">福留孝介（中日）</button>
+            <button id="itoi" class="cheering">糸井嘉男（オリックス）</button>
+            <button id="sekikawa" class="cheering">関川浩一（中日）</button>
+            <button id="ohmura" class="cheering">大村直之（近鉄）</button>
+            <button id="Chance1" class="cheering">チャンステーマ1（ロッテ）</button>
+            <button id="ishii" class="cheering">石井琢朗（横浜）</button>
+            <button id="Chance4" class="cheering">チャンステーマ4（西武）</button>
+            <button id="takahashi" class="cheering">高橋由伸（巨人）</button>
+            <button id="shibahara" class="cheering">柴原洋（ソフトバンク）</button>
+            <button id="iguchi" class="cheering">井口資仁（ダイエー）</button>
+            <button id="mayumi" class="cheering">真弓明信（阪神）</button>
+            <button id="fuzimoto" class="cheering">わっしょい（ソフトバンク）</button>
+            <button id="ogasawara" class="cheering">小笠原道大（日本ハム）</button>
+            <button id="hiyama" class="cheering">桧山進次郎</button>
+            <button id="suzuki" class="cheering">鈴木誠也（広島）</button>
+            <button id="rose2" class="cheering">ローズ（近鉄）</button>
+            <button id="birth" class="cheering">バース（阪神）</button>
+            <button id="yoshida" class="cheering">吉田正尚.境地ver（オリックス）</button>
+            <button id="matunaka" class="cheering">松中信彦（ソフトバンク）</button>
+            <button id="yamasaki" class="cheering">山﨑武司（楽天）</button>
+            <button id="kiyohara" class="cheering">清原和博（西武）</button>
+            <button id="jyozima" class="cheering">城島健司（ソフトバンク）</button>
+            <button id="murata" class="cheering">村田修一（横浜）</button>
+            <button id="inaba" class="cheering">稲葉篤紀（ヤクルト）</button>
+        </div>
+        <div id="open2" class="open">ゲームBGM</div>
+        <div class="BGM">
+            <button id="bgm1" class="cheering">spectre</button>
+            <button id="bgm2" class="cheering">メタナイトの逆襲</button>
+            <button id="bgm3" class="cheering">スマブラX（終点）</button>
+            <button id="bgm4" class="cheering">スーパーベルの丘</button>
+            <button id="bgm5" class="cheering">チャンピオンシップロード</button>
+        </div>
+        <div id="open3" class="open">曲</div>
+        <div class="others">
+            <button id="other1" class="cheering">心絵</button>
+            <button id="other2" class="cheering">桃源郷エイリアン</button>
+            <button id="other3" class="cheering">VS</button>
+            <button id="other4" class="cheering">反抗声明</button>
+            <button id="other5" class="cheering">Climax Jump</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        // アコーディオンメニュー
+        $('.cheering_songs').css("display", "none")
+        $('.BGM').css("display", "none")
+        $('.others').css("display", "none")
+        $('.open').on('click', function() {
+            $(this).next().slideToggle();
+        })
+    </script>
+    <script src="https://o289.github.io/NewMusicList/index.js"></script>
+</body>
+</html>
